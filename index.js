@@ -22,7 +22,7 @@ app.use("/videojuegos", vjRoutes);
 sequelize.sync()
     .then(()=>{
         app.listen(8082,()=>{
-        console.log("Aplicación web en línea en el puerto 8080")
+        console.log("Aplicación web en línea en el puerto 8082")
         })
     })
     .catch(err=>console.log(err))

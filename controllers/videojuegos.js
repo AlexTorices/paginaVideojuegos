@@ -1,5 +1,5 @@
 const path = require('path')
-const Videojuego = require('../utils/database').models.videojuego
+const Videojuego = require('../../utils/database').models.videojuego
 //const sequelize = require('../utils/database')
 //const Videojuego = require('../models/videojuegos')
 
