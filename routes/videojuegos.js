@@ -2,6 +2,7 @@ const express = require('express')
 // Mini aplicación de express
 const router = express.Router()
 const vjController = require('../controllers/videojuegos')
+const consolasController = require('../controllers/consolas')
 
 /* // Formulario para dar de alta videojuegos
 router.get('/agregarVideojuego', vjController.getAgregarVideojuego)*/
@@ -17,4 +18,6 @@ router.post('/borrarVideojuego', vjController.postBorrarVideojuego)
 // Actualziar videojuego UPDATE
 router.post('/actualizarVideojuego', vjController.postActualizarVideojuego)
 
+router.get('/consolas', consolasController.getAll)
+router.post('/consolas', consolasController.new)
 module.exports = router

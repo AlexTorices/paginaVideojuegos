@@ -1,5 +1,6 @@
 const path = require('path')
 const Videojuego = require('../utils/database').models.videojuego
+
 //const sequelize = require('../utils/database')
 //const Videojuego = require('../models/videojuegos')
 
@@ -20,7 +21,7 @@ exports.postAgregarVideojuego = (req, res)=>{
     res.send('Confirmacion datos')
 }*/
 
-exports.getObtenerVideojuegos = (req,res)=>{
+exports.getObtenerVideojuegos = (req, res)=>{
     Videojuego.findAll()
     .then(videojuegos=>{
         console.log(videojuegos)
